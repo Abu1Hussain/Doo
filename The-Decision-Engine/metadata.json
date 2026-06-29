@@ -1,0 +1,6 @@
+{
+  "name": "The Decision Engine",
+  "description": "An autonomous AI gatekeeper and policy engine verifying safety boundaries, dynamic roles, and contextual permissions before calling APIs or executing critical operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
