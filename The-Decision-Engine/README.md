@@ -1,7 +1,8 @@
-<h1 align="center">🌐 The Decision Engine</h1>
+<h1 align="center">🛡️ The Decision Engine</h1>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/AI-Gemini_API-8E75B2?style=for-the-badge&logo=google" alt="Gemini API" />
   <img src="https://img.shields.io/badge/UI-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Framework-React_Vite-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
   <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript" />
@@ -9,65 +10,111 @@
 
 <br />
 
-> **An autonomous AI system interface explicitly engineered to know when it is authorized to act, evaluating real-time telemetry against strict policy guardrails before executing commands.**
-
-This repository contains the complete frontend architecture for **The Decision Engine**. Built with a meticulous, human-centric design language, this dashboard rejects generic template patterns in favor of high-readability typography, purposeful whitespace, and precise data hierarchy.
+> **An autonomous security verification layer and guardrail system for AI Agents, ensuring safe tool execution, database access, and budget protection in real-time.**
 
 ---
 
-## 📑 Table of Contents
-- [The 5 Core Functional Zones](#-the-5-core-functional-zones)
-- [Design System & Color Theory](#-design-system--color-theory)
-- [Project Structure](#-project-structure)
-- [Quick Start](#-quick-start)
+## 📖 Overview
+AI agents are incredibly powerful, yet they lack inherent boundaries. Granting an LLM direct access to system tools, financial API endpoints, or database tables exposes secure systems to catastrophic prompt-injection bypasses, unauthorized commands, and data leaks.
+
+**The Decision Engine** serves as an intelligent, real-time Sentry guardrail. It sits securely between user/agent intent and critical back-end resources. By parsing proposed query payloads and analyzing contextual parameters—such as user authority levels, environmental time locks, and active system rules—it dynamically determines whether an action is **APPROVED**, **DENIED**, or requires **MULTI-FACTOR AUTHENTICATION (MFA)** before execution.
 
 ---
 
-## ⚡ The 5 Core Functional Zones
+## ✨ Core Features & Visual Architecture
 
-To empower the underlying AI model with the exact telemetry, constraints, and operational context it requires to make a safe decision, the dashboard is structurally broken down into five dedicated zones:
+### 1. Interactive Sandbox Simulator
+An operational playground allowing developers and judges to simulate Sentry guardrail behavior across diverse system commands:
+- **Explicit Intent Capture:** Select a **Target System Object** (e.g., *Financial Ledger*, *PII Salary Database*, *API Gateway*, *DevOps Server*) and propose an **Action Command** (e.g., *Transfer Funds*, *Read Salary Records*, *Wipe Cache*, *Deploy Build*).
+- **Simulated Intent Query Payload:** Input natural language strings representing agent intent to test compliance and bypass handling.
 
-1. **The Context & Environment Feed:** Real-time ingestion of world states, containing user authorization credentials, active time stamps, and server metrics.
-2. **Explicit Intent Capture:** High-contrast configurator-style option chips that clearly isolate the "Target Object" from the "Proposed Command," ensuring clean data inputs.
-3. **The Guardrails & Policy Matrix:** A modular interface of interactive utility cards displaying the running constraints and rules the AI must evaluate against.
-4. **Evaluation Transparency Layer:** The focal centerpiece of the application. It visually steps through the policy checklist and displays the final authoritative state badge: `ALLOWED TO ACT` or `ACTION DENIED`.
-5. **Human-in-the-Loop Override:** An automated conditional safety fallback mechanism that securely reveals an emergency authorization gateway only when risk levels are flagged as ambiguous or critical.
+### 2. Premium Identity & Authority Management
+- **Mock Identity / User Authority Selector:** A sleek dropdown featuring customizable user roles:
+  - 👤 **Admin** (Clearance Level 3)
+  - 📊 **Finance Manager** (Clearance Level 2)
+  - 🛠️ **Customer Support** (Clearance Level 1)
+  - 💻 **Junior Developer** (Clearance Level 1)
+- **Clearance Badge:** Fully responsive UI badges indicating security levels and multi-factor authentication (MFA) enrollment states.
+
+### 3. Contextual Environmental Constraints
+A live variable simulator mimicking real-world runtime context parameters:
+- **Simulated Environmental Clock:** Interactive slider to modify the system's operational hour to test time-locked actions (e.g., locking fund transfers outside 9 AM - 5 PM).
+- **IP Location Tracking:** Dynamic spoofing of requests from domestic versus restricted international locations.
+
+### 4. Domain-Specific Policy Specifications
+A library of modular, domain-specific security rules evaluated in real-time:
+- **Ledger Blueprints:** Preventing financial bleeding by setting volume-based transfer thresholds.
+- **Salary DB Blueprints:** Protecting personal identifiable information (PII) against unauthorized reads.
+- **DevOps Blueprints:** Eliminating catastrophic cache wipes or deployments triggered by unauthorized rolesHere is the ultimate, updated version of your `README.md`. It perfectly integrates the new Sentry guardrail details, the Gemini API environment setup, the hackathon pitch guide, and the specific `JetBrains Mono` visual identity. 
+
+I have also formatted it strictly to ensure maximum scannability and impact for developers and hackathon judges.
+
+Copy and paste this directly into your `README.md` file to overwrite the old text:
+
+***
+
+```markdown
+<h1 align="center">🛡️ The Decision Engine</h1>
+
+<div align="center">
+  <img src="[https://img.shields.io/badge/Status-Active-success?style=for-the-badge](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)" alt="Status" />
+  <img src="[https://img.shields.io/badge/UI-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss](https://img.shields.io/badge/UI-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss)" alt="Tailwind CSS" />
+  <img src="[https://img.shields.io/badge/Framework-React_Vite-646CFF?style=for-the-badge&logo=vite](https://img.shields.io/badge/Framework-React_Vite-646CFF?style=for-the-badge&logo=vite)" alt="Vite" />
+  <img src="[https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript](https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript)" alt="TypeScript" />
+</div>
+
+<br />
+
+> **An autonomous security verification layer and guardrail system for AI Agents, ensuring safe tool execution, database access, and budget protection in real-time.**
 
 ---
 
-## 🎨 Design System & Color Theory
+## 📖 Overview
 
-The interface uses an intentional, highly tailored color economy where bright accents never occupy more than 5% of the viewport canvas, creating an "expensive-looking" editorial layout.
+AI agents are incredibly powerful, yet they lack inherent boundaries. Granting an LLM direct access to system tools, financial API endpoints, or database tables exposes secure systems to catastrophic prompt-injection bypasses, unauthorized commands, and data leaks.
 
-### 🖤 Dark Mode System
-* **Canvas Background:** Deep, premium Near-Black (`#272729` / `#000000`).
-* **Success state (`ALLOWED TO ACT`):** Glacial Ice Cyan (`#64d2ff`) for sharp, readable telemetry.
-* **Neutral State:** Neo-Indigo (`#5e5ce6`) for analytical processing metrics.
-* **Warning state (`PENDING APPROVAL`):** Muted Amber (`#ff9f0a`) for a high-end metallic warning.
-
-### 🤍 Light Mode System
-* **Canvas Background:** Pure White (`#ffffff`) and refined Parchment (`#f5f5f7`).
-* **Success state (`ALLOWED TO ACT`):** Spruce Ink (`#1a4329`) with translucent overlay fills.
-* **Failure state (`ACTION DENIED`):** Sienna Terracotta (`#b54724`) for a sophisticated warning tone.
-* **Primary Accent:** Deep Iris (`#3a36db`) for active layout highlights.
-
-### 🗣️ Typography Scale
-* **Hero Display:** 64px (Tracking -0.02em, Weight 600) for striking, readable clarity.
-* **Paragraph Body Text:** 19px (Line-height 1.55, Weight 400) optimized for long-form reading comfort and zero accessibility eye-strain.
+**The Decision Engine** serves as an intelligent, real-time Sentry guardrail. It sits securely between user/agent intent and critical back-end resources. By parsing proposed query payloads and analyzing contextual parameters—such as user authority levels, environmental time locks, and active system rules—it dynamically determines whether an action is **APPROVED**, **DENIED**, or requires **MULTI-FACTOR AUTHENTICATION (MFA)** before execution.
 
 ---
 
-## 🗂️ Project Structure
+## ✨ Core Features & Visual Architecture
 
-The workspace is configured using a modern Vite + TypeScript build environment:
+### 1. Interactive Sandbox Simulator
+An operational playground allowing developers and judges to simulate Sentry guardrail behavior across diverse system commands.
+* **Zone 1 Intent Capture:** Select a Target System Object (e.g., Financial Ledger, PII Salary Database, API Gateway, DevOps Server).
+* **Zone 1 Proposed Command:** Select the Action Command (e.g., Transfer Funds, Read Salary Records, Wipe Cache, Deploy Build).
+* **Simulated Intent Query Payload:** Input natural language strings representing agent intent to test compliance and bypass handling.
+
+### 2. Premium Identity & Authority Management
+A sleek dropdown simulator featuring customizable user roles and responsive clearance badges indicating security levels and MFA enrolment states.
+* 👤 **Admin:** Clearance Level 3
+* 📊 **Finance Manager:** Clearance Level 2
+* 🛠️ **Customer Support:** Clearance Level 1
+* 💻 **Junior Developer:** Clearance Level 1
+
+### 3. Contextual Environmental Constraints
+A live variable simulator mimicking real-world runtime context parameters.
+* **Simulated Environmental Clock:** Interactive slider to modify the system's operational hour to test time-locked actions (e.g., fund transfers locked outside 9 AM - 5 PM).
+* **IP Location Tracking:** Dynamic spoofing of requests from domestic versus restricted international locations.
+
+### 4. Domain-Specific Policy Specifications
+A library of modular, domain-specific security rules evaluated in real-time.
+* **Ledger Blueprints:** Preventing financial bleeding by setting volume-based transfer thresholds.
+* **Salary DB Blueprints:** Protecting personal identifiable information (PII) against unauthorized reads.
+* **DevOps Blueprints:** Eliminating catastrophic cache wipes or deployments triggered by unauthorized roles.
+
+---
+
+## 🛠️ Project Architecture
 
 ```text
-THE-DECISION-ENGINE/
-├── assets/             # Static media and design assets
-├── src/                # Core React components and application logic
-├── .env.example        # Environment variable templates
-├── index.html          # Main HTML document entry point
-├── package.json        # NPM dependencies and scripts
-├── server.ts           # Backend/API routing logic
-├── tsconfig.json       # TypeScript configuration
-└── vite.config.ts      # Vite build tooling setup
+├── root/
+│   ├── server.ts          # Node.js/Express API backend & server-side Vite middleware
+│   ├── package.json       # Node dependencies, build compilation, and start scripts
+│   ├── .env.example       # Environment variable declarations (e.g. GEMINI_API_KEY)
+│   ├── tsconfig.json      # TypeScript configuration parameters
+│   └── src/
+│       ├── App.tsx        # Sentry Interactive Client Dashboard
+│       ├── types.ts       # TypeScript data models, preset users, and schemas
+│       ├── main.tsx       # React client mount entrypoint
+│       └── index.css      # Tailwind CSS variables, display typography, and smooth sliders
