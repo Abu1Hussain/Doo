@@ -43,7 +43,6 @@ We are officially competing in **Open Season**. Every repository housed under ou
 This profile manages codebases transparently to show our structural engineering velocity to judges and sponsors:
 
 ```text
-DOO.ooo/
+root/
 ├── 📁 The-Decision-Engine/     # Live Mission: Autonomous AI Sentry Guardrail System
-├── 📁 assets/                  # Centralized visual branding assets
 └── 📄 README.md                # Master brand manifesto & passport tracker
