@@ -1,0 +1,6 @@
+{
+  "name": "The Adaptive Agent",
+  "description": "A sci-fi command center HUD and mission-control monitoring dashboard visualizing an adaptive AI agent system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
